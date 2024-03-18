@@ -1,0 +1,92 @@
+/*.trucktable
+{
+    margin-left:auto;
+    margin-right: auto;
+}
+td
+{
+    border:2px solid black;
+    width:70%;
+    border-collapse: separate;
+    border-spacing:0 15px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #f2f2f2;
+}*/
+
+
+.table
+{
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.table
+{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.left
+{
+    width:200px;
+    /*-webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);*/
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    /* box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47); */
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+    border-radius: 25px;
+    font-size:20px;
+    text-align: center;
+    padding:10px; 
+    margin-bottom: 10px;
+    margin-right:10px;
+    /* background: linear-gradient(to left, #fff 50%, #a38aff 50%) right;
+    background-size: 200% 100%; */
+}
+.right
+{
+    width:200px;
+    /*-webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);*/
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    /* box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47); */
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+    border-radius: 25px;
+    font-size:20px;
+    text-align: center;
+    vertical-align:middle;
+    padding:10px; 
+    margin-bottom: 10px;
+    margin-left:10px; 
+    /* background: linear-gradient(to left, #fff 50%, #a38aff 50%) right;
+    background-size: 200% 100%; */
+}
+
+.right:hover{
+    background-position: left;
+    transition:all 0.5s ease;
+}
+.left:hover{
+    background-position: left;
+    transition:all 0.5s ease;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

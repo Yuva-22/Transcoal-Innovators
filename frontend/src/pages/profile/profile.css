@@ -1,0 +1,66 @@
+.profile
+{
+  display: flex;
+}
+
+.profilecontainer
+{
+  flex:6;
+}
+
+.avatar
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profiletop
+{
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 80px;
+    gap:50px;
+    margin-top: 20px;
+}
+
+.details{
+    .itemtitle{
+        margin-bottom: 10px;
+        color:#999;
+        margin-top: 15px;
+    }
+
+    .detailitem{
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: start;
+
+        .itemkey{
+            font-weight: bold;
+            color:gray;
+            margin-right: 5px;
+        }
+
+        .itemvalue{
+            font-weight: 300;
+        }
+    }
+}
+
+.custom-tooltip .label
+{
+  color:black;
+  font-weight: 600;
+}
+.custom-tooltip
+{
+    color:black;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #fff;
+    opacity:0.9;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+}

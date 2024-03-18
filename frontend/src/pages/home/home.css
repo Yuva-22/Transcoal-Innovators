@@ -1,0 +1,114 @@
+.home
+{
+  display: flex;
+}
+.homecontainer
+{
+  flex:6;
+}
+.chartsfirst
+{
+  display: flex;
+  gap:80px;
+  margin-top: 20px;
+}
+.chartsecond
+{
+  display: flex;
+}
+.chartsection
+{
+  display: flex;
+  justify-content: center;
+  width:80%;
+  height : 500px;
+  margin-left : 120px;
+}
+
+.waterleveltitle{
+   font-size: 15px;
+   /* margin-left: 40px; */
+   /* color:#1CA3EC; */
+   text-align: center;
+   color:#999;
+}
+.levelmanagetitle
+{
+  font-size: 15px;
+  margin-left: 40px;
+}
+.firstdiv
+{
+  flex:1;
+}
+.seconddiv
+{
+  flex:2;
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+}
+
+.livetrack
+{
+   border:1px solid blue; 
+  height:195px;
+}
+.track
+{
+  border:1px solid black;
+  margin-top: 80px;
+  margin-left:30px;
+  font-size:20px;
+  vertical-align: middle;
+  height:40px;
+}
+
+.levelmanage{
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+  border-radius: 25px;
+  margin-bottom: 15px;
+  width:300px;
+}
+
+.widgets
+{
+  margin-left: 30px;
+}
+
+.starttrack
+{
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+  border-radius: 13px;
+  margin-bottom: 15px;
+  width:300px;
+  margin-left: 10px;
+  margin-top:25px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  padding: 25px;
+  text-align: center;
+}
+
+.starttrack:hover{
+  font-size: 13px;
+  transition: 0.2s all ease;
+}
+
+.starttracktitle{
+  color:#1CA3EC;
+}
+
+.secondpart
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.showtruck
+{
+  color:#1CA3EC;
+  background-color: #fff;
+}

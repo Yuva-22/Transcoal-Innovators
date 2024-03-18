@@ -1,0 +1,36 @@
+.traindashboard
+{
+  display: flex;
+}
+.traindashboardcontainer
+{
+  flex:6;
+}
+.shipdetail
+{
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+}
+.shipdetailscontainer
+{
+  display: flex;
+  gap:100px;
+  justify-content: center;
+}
+.shipdetail
+{
+  height:60px;
+  width:300px;
+  padding:5px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.shipdetailtitle
+{
+  color:#1CA3EC;
+}
+.shipdetailscontainer p
+{
+  margin-left: 15px;
+  margin-top:10px;
+}  

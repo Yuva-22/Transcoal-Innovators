@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.speed {
+  display: flex;
+  margin-left: 30px;
+}
+
+.speed__wheel {
+  /* position: absolute; */
+  position: relative;
+  width:300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #000;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 90%);
+}
+
+.speed__tick {
+  display: flex;
+  gap: 1px;
+}
+
+.tick {
+  transform-origin: bottom;
+  position: absolute;
+  background: linear-gradient(to top, transparent 90%, red 90%);
+  height: 140px;
+  width: 2px;
+  top: 10px;
+  left: 50%;
+}
+
+/* Define styles for each tick manually */
+
+.tick:nth-child(1) {
+  transform: rotate(0deg) rotateZ(-127deg);
+}
+.tick:nth-child(2) {
+  transform: rotate(13.5deg) rotateZ(-127deg);
+}
+.tick:nth-child(3) {
+  transform: rotate(27deg) rotateZ(-127deg);
+}
+.tick:nth-child(4) {
+  transform: rotate(40.5deg) rotateZ(-127deg);
+}
+.tick:nth-child(5) {
+  transform: rotate(54deg) rotateZ(-127deg);
+}
+.tick:nth-child(6) {
+  transform: rotate(67.5deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(7) {
+  transform: rotate(81deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(8) {
+  transform: rotate(94.5deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(9) {
+  transform: rotate(108deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(10) {
+  transform: rotate(121.5deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(11) {
+  transform: rotate(135deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(12) {
+  transform: rotate(148.5deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(13) {
+  transform: rotate(162deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(14) {
+  transform: rotate(175.5deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(15) {
+  transform: rotate(189deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(16) {
+  transform: rotate(202.5deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(17) {
+  transform: rotate(216deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(18) {
+  transform: rotate(229.5deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(19) {
+  transform: rotate(243deg) rotateZ(-127deg);
+}
+
+.tick:nth-child(20) {
+  transform: rotate(256.5deg) rotateZ(-127deg);
+}
+
+/* Style for odd tick content (adjust based on desired values) */
+
+.tick:nth-child(odd)::before {
+  position: absolute;
+  content: attr(value) '';
+  color: #fff;
+  left: -8px;
+  top: 20px;
+  z-index: 11;
+  /* transform: rotate(130deg); */
+}
+
+/* Pointer and endpoint styles */
+
+.pointer {
+  position: relative;
+  background: yellow;
+  height: 190px;
+  width: 20px;
+  left: 140px;
+  top: 3px;
+  clip-path: polygon(9px 10px, 11px 10px, 20px 150px, 10px 190px, 0 150px);
+  transform-origin: 10px 145px;
+  animation: animate-pointer 10s ease-in-out infinite;
+}
+
+.pointer::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  top: 140px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.endpoint {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: grey;
+  top: 225px;
+  left: 235px;
+  border-radius: 50%;
+}
+
+@keyframes animate-pointer {
+  0% {
+    transform: rotate(-40deg);
+  }
+
+  50%{
+    transform : rotate(-40deg);
+  }
+}

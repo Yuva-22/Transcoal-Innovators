@@ -1,0 +1,34 @@
+.shipdashboard
+{
+    display: flex;
+}
+
+.shipdashboardcontainer
+{
+    flex:6;
+}
+
+.shipdetails{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+.shipdetail
+{
+    font-size:18px;
+    padding: 3px;
+}
+
+.starttrack
+{
+    margin-left: auto;
+    margin-right: auto;
+    transition : all 0.5s ease;
+}
+
+
+.shipdetailtitle
+{
+    margin-bottom:20px;
+}

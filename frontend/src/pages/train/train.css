@@ -1,0 +1,175 @@
+.train
+{
+  display: flex;
+}
+.traincontainer
+{
+  flex:6;
+}
+.traincharts
+{
+  display:flex;
+  justify-content:left;
+  margin-left:20%;
+  gap:150px;
+}
+
+.traincharts .traintitle{
+   font-size: 30px;
+   margin-left: -6px;
+   color:#999;
+}
+
+
+.traincharts .traindetailtitle
+{
+  color:#999;
+  text-align: center; 
+  margin-bottom: 15px;
+}
+
+.train-content .content .arrival
+{
+  font-size:13px;
+  color:#999;
+}
+
+.train-content .content .place
+{
+  color:#999;
+}
+
+.icondiv .trainicon
+{
+  border:2px solid black;
+  border-radius:50%;
+  margin-left:-1.1rem;
+}
+
+.train-content .content .departure
+{
+  font-size:13px;
+  color:#999;
+}
+
+.train-content .content .kms
+{
+  font-size:13px;
+  color:#999;
+}
+
+.train-box
+{
+  margin-top: 30px;
+  /* border-left: .2rem solid rgb(131, 131, 131); */
+  border-left: .2rem solid #7451f8;
+}
+
+.train-box .train-content
+{
+  position: relative;
+  padding-left: 2rem;
+}
+
+.train-box .train-content::before{
+    content: '';
+    position: absolute;
+    top:0;
+    /*left:-1.1rem;
+     width:2rem;
+    height:2rem; */
+    left:-0.8rem;
+    width:25px;
+    height:25px;
+    background: #7451f8;
+    border-radius: 50%;
+}
+
+.train-content .content{
+  position: relative;
+  padding: 15px;
+  padding-left: 20px;
+  /*border: 2px solid black;*/
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    /* box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47); */
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+
+  border-radius:25px;
+  margin-bottom: 2rem;
+  /*overflow:hidden;*/
+  width:300px;
+  /* background: linear-gradient(to left, #fff 50%, #a38aff 50%) right;
+  background-size: 200% 100%; */
+}
+
+/* .train-content .content:hover{
+  background-position: left;
+  transition:all 0.5s ease;
+} */
+
+/* .train-content .content::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background:blue;
+    border-radius: 25px;
+    z-index:-1;
+    transition: .5s;
+} */
+
+.train-content .content:hover::before{
+  width:100%;
+}
+
+.train-content .content .place{
+  font-size: 1.5rem;
+  color:black;
+  padding-bottom: .5rem;
+}
+
+.train-content .content .arrivetime
+{
+   font-size:14px;
+   font-weight: 600;
+}
+
+.train-content .content .deptime
+{
+  font-size:14px;
+  font-weight: 600;
+}
+
+.train-content .content .crossedkm
+{
+  font-size:14px;
+  font-weight: 600;
+}
+
+.train-content .content .place
+{
+  font-size:16px;
+  font-weight: 600;
+  color:#999;
+}
+
+.MuiSlider-thumb
+{
+  background-image:url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M4 15.5V6q0-1.325.688-2.113t1.812-1.2q1.125-.412 2.563-.55T12 2q1.65 0 3.113.138t2.55.55q1.087.412 1.712 1.2T20 6v9.5q0 1.475-1.012 2.488T16.5 19l1.5 1.5v.5h-2l-2-2h-4l-2 2H6v-.5L7.5 19q-1.475 0-2.488-1.012T4 15.5M6 10h5V7H6zm7 0h5V7h-5zm-4.5 6q.65 0 1.075-.425T10 14.5q0-.65-.425-1.075T8.5 13q-.65 0-1.075.425T7 14.5q0 .65.425 1.075T8.5 16m7 0q.65 0 1.075-.425T17 14.5q0-.65-.425-1.075T15.5 13q-.65 0-1.075.425T14 14.5q0 .65.425 1.075T15.5 16"%2F%3E%3C%2Fsvg%3E');
+}
+
+.MuiSlider-track
+{
+  color:black;
+}
+
+.train-section
+{
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+
